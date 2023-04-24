@@ -4,19 +4,16 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h2>Todoリスト with TypeScript</h2>
+        {/* onSubmitとは、フォームに何かタスクを打ち込んでエンターキを押すとゆう時にどういった操作をするのかを指定する時に使う */}
+        <form onSubmit={() => {}}>
+          {/* onChangeとは、inputに文字を打ち込む度に呼ばれるプロパティーになっている */}
+          <input type="text" onChange={() => {}} />
+          {/* 送信ボタン */}
+          <input type="submit" value="作成" />
+        </form>
+      </div>
     </div>
   );
 }
